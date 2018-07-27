@@ -17,3 +17,20 @@ You then proceed by comparing the 2nd and 3rd terms, performing a swap when nece
 Task
 
 Program an algorithm in Javascript (or your selected language, if it is available) that performs exactly 1 complete pass (no more, no less :D) of the Bubblesort algorithm to a list of positive integers. You may assume all arguments provided are arrays containing at least 2 positive integers.
+
+function bubble(arr) {
+     
+    
+      for (var i = 0; i < arr.length ; i++) {
+      
+        if (arr[i] > arr[i + 1]) {
+          // intercambio
+          var intercambio = arr[i];
+          arr[i] = arr[i+1];
+          arr[i + 1] = intercambio;
+        }
+         
+       }
+         return arr;
+      }
+

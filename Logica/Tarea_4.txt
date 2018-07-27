@@ -26,3 +26,21 @@ potatoesshould return the final weight coming out of the oven w1 truncated as an
 Example:
 
 potatoes(99, 100, 98) --> 50
+
+https://link.springer.com/article/10.1007%2FBF02855021
+
+
+formula=2.78((patatas_agua)/patatas_aire)*100%
+k la constante 2.78
+
+Porcentajedemateriaseca=2.78((patatas_agua)/patatas_aire)*100%;
+
+ function potatoes(p0, w0, p1) {
+   var dryPercent = (100-p0)/100;
+   var dryPotatoes = w0 * dryPercent;
+   var final = dryPotatoes / ((100 - p1) / 100);
+   return Math.trunc(final);
+ }
+  
+
+ potatoes(99, 100, 98)

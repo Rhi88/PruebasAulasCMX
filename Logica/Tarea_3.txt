@@ -16,3 +16,25 @@ Last time he did these calculations he caught a headache so could you help John?
     0 <= l, w, h (floating numbers), it can happens that w x h x l is zero
     the integer r (number of rolls) will always be less or equal to 20
 
+// function wallpaper(l, w, h) {
+//   if(l>0&& w>0 && h>0){
+//   var area = 2*((l*h)+(w*h));
+//   console.log(area)
+//   var roll = area/(0.52*10);
+//   console.log(roll)
+//   var order = Math.ceil(roll + (roll*0.15));}
+//   else{
+//    order= 0; 
+//   }
+
+//   var English=['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty']
+  
+  
+//   var final = English[order];
+//   return  final;
+// }
+
+// //wallpaper(6.3, 4.5, 3.29)// "sixteen"
+// wallpaper(7.8, 2.9, 3.29)// "sixteen"
+// //wallpaper(6.3, 5.8, 3.13)//"seventeen"
+// //wallpaper(4, 3.5, 3)

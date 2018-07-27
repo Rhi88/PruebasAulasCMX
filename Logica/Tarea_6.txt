@@ -24,3 +24,9 @@ addOrChangeUrlParameter("www.example.com?key=value", "key2=value2" )
 addOrChangeUrlParameter("www.example.com?key=oldValue`", "key=newValue" ) 
 // ->'www.example.com?key=newValue' (changes the parameter).
 
+function addOrChangeUrlParameter(url , key)
+{
+key=splice
+return url+key
+};
+addOrChangeUrlParameter("www.example.com", "key=value"); 

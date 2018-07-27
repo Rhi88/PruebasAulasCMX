@@ -9,3 +9,16 @@ For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of 
 Your function will be tested with pre-made examples as well as random ones.
 
 If you can, try writing it in one line of code.
+
+function cuboids([a,b,c],[d,e,f])
+{
+var v1=a*b*c;
+var v2=d*e*f;
+if (v1>v2)
+{
+return v1-v2;
+}
+else
+return v2-v1;
+}
+cuboids([5, 4, 1],([2, 2, 3]);

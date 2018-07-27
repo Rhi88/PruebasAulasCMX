@@ -13,3 +13,15 @@ remove("!Hi") === "Hi!"
 remove("!Hi!") === "Hi!"
 remove("Hi! Hi!") === "Hi Hi!"
 remove("Hi") === "Hi!"
+
+
+
+function remove(cadena){
+  var quitar = cadena.split("!").join("") 
+  var añadir = "!"; 
+  
+  return quitar + añadir; 
+  
+  
+}
+remove("hi! hi!!");
