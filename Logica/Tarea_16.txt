@@ -9,3 +9,31 @@ For example:
 uniqueInOrder('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
 uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
 uniqueInOrder([1,2,2,3,3])       == [1,2,3]
+
+	function uniqueInOrder(cadena){
+
+		var nvoArr = []
+		var contadorNvoArr = 0;
+	    //crea una nueva instancia de Array a partir de un objeto iterable.
+		var transformada = Array.from(cadena)	
+
+
+
+		for (var i = 0 ; i < transformada.length; i++) {
+		
+			if(i===0)
+			{
+				newArr[cotadorNvoArr] = transformada[i]
+			}
+			else
+			{
+				if(trasnformada[i] != newArr[contadorNvoArr] )
+				{
+					contadorNvoArr ++
+					newArr[contadorNvoArr] = transformada[i]
+				}
+			}
+		}
+		// refresesamos el string
+		return nvoArr.toString()
+	}
